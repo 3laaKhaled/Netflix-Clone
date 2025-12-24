@@ -64,7 +64,7 @@ const Navbar = () => {
 
     {/* Mobile Menu */}
     <div className={`fixed top-0 right-0 h-screen w-64 bg-[#141414] z-40 transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden p-6`}>
-      <button onClick={() => setMenuOpen(false)} className='mb-6 text-xl'>
+      <button onClick={() => setMenuOpen(false)} className='mb-6 z-10 text-xl'>
         ✕
       </button>
         <ul className="flex flex-col gap-4">
