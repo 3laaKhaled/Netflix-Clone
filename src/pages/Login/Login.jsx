@@ -3,6 +3,7 @@ import './Login.css'
 import logo from '../../assets/logo.png'
 import { login, signup } from '../../firebase/firebase'
 import netflixSpinner from '../../assets/netflix_spinner.gif'
+import bg from '../../assets/background_banner.jpg'
 import { getAuth, setPersistence, browserLocalPersistence, browserSessionPersistence } from "firebase/auth"
 
 
@@ -54,7 +55,7 @@ const Login = () => {
       className="min-h-screen w-full bg-cover bg-center flex justify-center items-center relative"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/src/assets/background_banner.jpg')",
+          `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bg})`,
       }}
     >
       {/* Logo */}
