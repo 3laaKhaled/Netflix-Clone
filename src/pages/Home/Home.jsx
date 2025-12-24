@@ -24,23 +24,25 @@ const Home = () => {
 
         {/* Caption */}
         <div className="absolute bottom-0 left-0 w-full px-[6%] pb-12 text-white">
-          <img src={heroTitle} alt="hero Title" className='w-[90%] max-w-105 mb-6' />
-          <p className='max-w-175 text-sm sm:text-base md:text-[17px] mb-5'>Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemy.</p>
+          <img src={heroTitle} alt="hero Title" className='w-[70%] sm:w-[80%] md:w-[90%] max-w-105 mb-4 sm:mb-5 md:mb-6' />
+          <p className='max-w-175 text-xs sm:text-sm md:text-[17px] mb-4 sm:mb-5'>Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemy.</p>
 
           {/* Buttons */}
-          <div className="flex gap-2 mb-12">
-            <button className='flex items-center gap-2 px-5 py-2 text-[15px] font-semibold rounded bg-white text-black hover:bg-white/80 transition duration-300'>
-              <img src={playIcon} alt="play icon" className="w-6"/>
+          <div className="flex gap-2 mb-6 sm:mb-12">
+            <button className='flex items-center gap-2 px-3 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-[15px] font-semibold rounded bg-white text-black hover:bg-white/80 transition duration-300'>
+              <img src={playIcon} alt="play icon" className="w-4 sm:w-6"/>
               Play
             </button>
-            <button className='flex items-center gap-2 px-5 py-2 text-[15px] font-semibold rounded bg-white/30 hover:bg-white/20 transition duration-300'>
-              <img src={infoIcon} alt="info icon" className="w-6"/>
+            <button className='flex items-center gap-2 px-3 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-[15px] font-semibold rounded bg-white/30 hover:bg-white/20 transition duration-300'>
+              <img src={infoIcon} alt="info icon" className="w-4 sm:w-6"/>
               More Info
             </button>
           </div>
 
           {/* TitleCards inside Hero */}
+          <div className='hidden md:block'>
           <TitleCards />
+          </div>
         </div>
       </div>
 

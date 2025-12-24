@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className={`fixed top-0 w-full z-50 px-[6%] py-5 flex items-center justify-between text-sm text-[#e5e5e5] transition-colors duration-300 
+    <div className={`fixed top-0 w-full z-40 px-[6%] py-5 flex items-center justify-between text-sm text-[#e5e5e5] transition-colors duration-300 
     ${isScrolled ? 'bg-[#141414]' : 'bg-linear-to-b from-black/70 to-transparent'}`}>
 
       {/* Left */}
@@ -64,7 +64,7 @@ const Navbar = () => {
 
     {/* Mobile Menu */}
     <div className={`fixed top-0 right-0 h-screen w-64 bg-[#141414] z-40 transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden p-6`}>
-      <button onClick={() => setMenuOpen(false)} className='mb-6 z-51 text-xl'>
+      <button onClick={() => setMenuOpen(false)} className='mb-6 z-50 text-xl'>
         ✕
       </button>
         <ul className="flex flex-col gap-4">
